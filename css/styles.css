@@ -37,3 +37,9 @@ height: 300px
 color: red;
 font-style: italic
 }
+
+a {text-decoration: none;}
+
+a:visited {color: #0088FF;}
+
+a:hover {color: orange;}
