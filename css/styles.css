@@ -1,0 +1,39 @@
+h3 {
+  font-style: italic;
+  color: blue;
+}
+
+p {
+text-indent: 5px
+}
+h2 {
+text-align: center;
+font-family: "fontAine", "Arial", "sans-serif"
+}
+
+@font-face {
+    font-family: "fontAine";
+    src: URL(./font/font.otf);
+}
+
+.Even {
+background-color: #5BBDBF
+}
+
+.Odd {
+background-color: #FF5850
+}
+body {
+	width: 600px;
+	background-color: #838892;
+	line-height:150%;
+
+}
+.Court {
+height: 300px
+}
+
+.Skill {
+color: red;
+font-style: italic
+}
