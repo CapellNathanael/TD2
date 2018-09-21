@@ -1,45 +1,148 @@
 h3 {
-  font-style: italic;
-  color: blue;
+	border:1px solid #CCCCCC;
+	font-style: italic;
+	color: blue;
 }
 
 p {
-text-indent: 5px
+	text-indent: 5px;
+	margin: 30px 0px;
 }
+
+.clear {
+	clear: left;
+} 
+
 h2 {
-text-align: center;
-font-family: "fontAine", "Arial", "sans-serif"
+	padding: 10px 0px;
+	text-align: center;
+	font-family: "fontAine", "Arial", "sans-serif"
 }
 
 @font-face {
     font-family: "fontAine";
-    src: URL(./font/font.otf);
+    src: URL(../font/font.otf);
 }
 
 .Even {
-background-color: #5BBDBF
+	background-color: #5BBDBF;
 }
 
 .Odd {
-background-color: #FF5850
+	background-color: #FF5850;
 }
+
 body {
+	margin: auto;
 	width: 600px;
 	background-color: #838892;
 	line-height:150%;
 
 }
+
 .Court {
-height: 300px
+	height: 300px;
+	float: right;
 }
 
 .Skill {
-color: red;
-font-style: italic
+	color: red;
+	font-style: italic
 }
 
-a {text-decoration: none;}
+a {
+	text-decoration: none;
+}
 
-a:visited {color: #0088FF;}
+a:visited {
+	color: #0088FF;
+}
 
-a:hover {color: orange;}
+a:hover {
+	color: orange;	
+}
+
+thead {
+	background-color: #00AAFF;
+}
+
+th> .skill {
+	color: #640051;
+	padding: 0px 5px;
+}
+
+tbody:nth-child(odd) {
+	background-color: #CCC;
+}
+
+tbody:nth-child(even) {
+	background-color: white;
+}
+
+table {
+	text-align: center;
+}
+
+.Long {
+	float: left;
+	height: 150px;
+}
+
+#twitter  {
+	position: fixed;
+	bottom: 20px;
+	right: 20px; 
+}
+
+#facebook {
+	position: fixed;
+	bottom: 50px;
+	right: 20px; 
+}
+
+nav  {
+	width: 75%;
+	height: 200px;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	background-color: #FF00FF;
+	align-items: stretch;
+
+
+}
+
+nav > div {
+	background-color: #5BBDBF;
+	display: inline;
+	position: relative;
+	width: 100px;
+}
+
+nav a {
+	background-color: #c0d5c2;
+	padding: 10px 0px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: black;
+
+}
+
+nav > div:first-child a{
+	padding: 10px 0px;
+	border: none;
+}
+
+.submenu {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	bottom: 200px;
+	background-color: #aca;
+	display: none;
+}
+
+nav > div:hover .submenu{
+	display: block;
+}
