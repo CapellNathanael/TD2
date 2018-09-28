@@ -115,7 +115,7 @@ nav > div {
 	background-color: #5BBDBF;
 	display: flex;
 	position: relative;
-	width: 100px;
+	width: 120px;
 	align-items: stretch;
 }
 
@@ -147,7 +147,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	background-color: white;
-
+	margin-bottom: 20px;
 }
 
 main{
@@ -171,4 +171,27 @@ article {
 
 nav > div:hover .puce{
 	visibility: visible;
+}
+
+form {
+	margin-left: 5%;
+}
+
+fieldset{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5px;
+	width: 70%;
+	margin: auto;
+}
+
+
+fieldset>div{
+	width: 30%
+	margin-left:5px;
+}
+
+fieldset p{
+	display: flex;
+	flex-direction: row;
 }
