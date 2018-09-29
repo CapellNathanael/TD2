@@ -49,12 +49,12 @@
 
 					<div>
 						<p>
-							<label for="surname">Nom</label>
-							<input id="surname" name="uname" type="text">
+							<label for="surname">Nom*</label>
+							<input id="surname" name="uname" type="text" required>
 						</p>
 						<p>
-							<label for="firstname">Prénom</label>
-							<input id="firstname" name="uname" type="text">
+							<label for="firstname">Prénom*</label>
+							<input id="firstname" name="uname" type="text" required>
 						</p>
 					</div>
 
@@ -81,7 +81,7 @@
 
 					<div>
 						<p>
-							E-mail: <input type="email" name="emailadress">
+							E-mail: <input type="email" name="emailadress" placeholder="youremail@domain.com">
 						</p>
 					</div>
 
@@ -121,15 +121,15 @@
 					</p>
 
 					<div>
-						Mot de passe: <input type="password" name="pwd">
+						Mot de passe: <input type="password" name="pwd" minlength="8">
 					</div>
 
 				<p>
-					<input type="checkbox" name="clauses" value="clauses">J'ai bien lu les clauses que je n'ai pas lues<br>
+					<input type="checkbox" name="clauses" value="clauses" required>J'ai bien lu les clauses que je n'ai pas lues*<br>
 				</p>
 
 				<label>Message pour Chuck</label>
-				<textarea name="textarea" rows="10" cols="50"></textarea>	
+				<textarea name="textarea" rows="10" cols="50" placeholder="Un inscrit sera tiré au sort, et verra son message transmis à Chuck Norris."></textarea>	
 
 				</fieldset>		
 
